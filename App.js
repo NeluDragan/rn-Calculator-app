@@ -50,10 +50,13 @@ export default function App() {
     setOperand("");
     setFirstNumber("");
   };
+  const SetCalcul = new String(
+    firstNumber + " " + operand + " " + secondNumber
+  );
   return (
     <View style={styles.container}>
       <View style={styles.resultContainer}>
-        <Text style={styles.mainText}>{secondNumber}</Text>
+        <Text style={styles.mainText}>{SetCalcul}</Text>
       </View>
       <StatusBar style="light" />
       <View style={styles.orizontal}>
